@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['user_name'] = $user['username'];
 
-                header('Location: blog/app-blog-grid.php'); // Redireciona para o dashboard
+                header('Location: blog/layout.php'); // Redireciona para o dashboard
                 exit();
             } else {
                 $_SESSION['error'] = 'Email ou senha incorretos!';
